@@ -5,7 +5,7 @@ ob_start();
 session_start();
 
 
-$koneksi = new mysqli("localhost","root","","kas");
+$koneksi = new mysqli  ("us-cdbr-iron-east-05.cleardb.net","b5129b01eb70e7", "9048a09d","heroku_39d9db6a2795c0b");
 
 if($_SESSION['admin'] || $_SESSION['user']){
     header("location:index.php");
